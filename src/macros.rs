@@ -1,8 +1,8 @@
 //! This module contains macros which implements `html!` macro
 //! and JSX-like templates.
 
-use html::Component;
-use virtual_dom::{Listener, VNode};
+use crate::html::Component;
+use crate::virtual_dom::{Listener, VNode};
 
 #[macro_export]
 macro_rules! html_impl {

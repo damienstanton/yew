@@ -4,7 +4,7 @@ use std::collections::VecDeque;
 use std::rc::Rc;
 use std::cell::RefCell;
 use std::sync::atomic::{AtomicBool, Ordering};
-use Shared;
+use crate::Shared;
 
 thread_local! {
     static SCHEDULER: Rc<Scheduler> =

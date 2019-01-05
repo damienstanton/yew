@@ -1,6 +1,6 @@
 //! This module contains fragments implementation.
 use super::{VDiff, VNode, VText};
-use html::{Component, Scope};
+use crate::html::{Component, Scope};
 use stdweb::web::Node;
 
 /// This struct represents a fragment of the Virtual DOM tree.
@@ -48,7 +48,7 @@ impl<COMP: Component> VDiff for VList<COMP> {
                     // Previously rendered items
                     vlist.childs.drain(..).map(Some).collect::<Vec<_>>()
                 }
-                Some(mut vnode) => {
+                Some(vnode) => {
                     // Use the current node as a single fragment list
                     // and let the `apply` of `VNode` to handle it.
                     vec![Some(vnode)]

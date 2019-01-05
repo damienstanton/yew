@@ -7,10 +7,10 @@ use std::rc::Rc;
 use std::cell::RefCell;
 use stdweb::web::{Element, EventListenerHandle, INode, Node};
 use stdweb::web::html_element::SelectElement;
-use virtual_dom::{Listener, VDiff, VNode};
-use callback::Callback;
-use scheduler::{Runnable, scheduler};
-use Shared;
+use crate::virtual_dom::{Listener, VDiff, VNode};
+use crate::callback::Callback;
+use crate::scheduler::{Runnable, scheduler};
+use crate::Shared;
 
 /// This type indicates that component should be rendered again.
 pub type ShouldRender = bool;

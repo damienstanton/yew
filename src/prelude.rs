@@ -8,7 +8,7 @@
 //! ```
 extern crate stdweb;
 
-pub use html::{
+pub use crate::html::{
     Component,
     ComponentLink,
     Href,
@@ -19,9 +19,9 @@ pub use html::{
     ShouldRender,
 };
 
-pub use app::App;
+pub use crate::app::App;
 
-pub use callback::Callback;
+pub use crate::callback::Callback;
 
 pub use stdweb::web::event::{
     BlurEvent,
@@ -55,7 +55,7 @@ pub use stdweb::web::event::{
     SubmitEvent
 };
 
-pub use agent::{
+pub use crate::agent::{
     Bridge,
     Bridged,
     Threaded,
@@ -63,7 +63,7 @@ pub use agent::{
 
 /// Prelude module for creating worker.
 pub mod worker {
-    pub use agent::{
+    pub use crate::agent::{
         Agent,
         AgentLink,
         Bridge,

@@ -15,8 +15,8 @@ use failure::Error;
 use yew::prelude::*;
 use yew::services::fetch::FetchTask;
 
-use gravatar::{GravatarService, Profile};
-use ccxt::CcxtService;
+use crate::gravatar::{GravatarService, Profile};
+use crate::ccxt::CcxtService;
 
 pub struct Model {
     gravatar: GravatarService,

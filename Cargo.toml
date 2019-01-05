@@ -2,6 +2,7 @@
 name = "yew"
 version = "0.5.0"
 authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+edition = "2018"
 repository = "https://github.com/DenisKolodin/yew"
 homepage = "https://github.com/DenisKolodin/yew"
 documentation = "https://docs.rs/yew/"
@@ -10,7 +11,6 @@ readme = "README.md"
 keywords = ["web", "asmjs", "webasm", "javascript"]
 categories = ["gui", "web-programming"]
 description = "A framework for making client-side single-page apps"
-edition = "2018"
 
 [dependencies]
 failure = "0.1"

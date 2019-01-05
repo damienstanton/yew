@@ -10,9 +10,9 @@ extern crate stdweb;
 mod router;
 mod routing;
 mod b_component;
-use b_component::BModel;
+use crate::b_component::BModel;
 
-use router::Route;
+use crate::router::Route;
 use yew::prelude::*;
 
 

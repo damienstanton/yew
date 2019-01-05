@@ -38,7 +38,7 @@ impl Component for Model {
     }
 
     fn update(&mut self, msg: Self::Message) -> ShouldRender {
-        use Msg::*;
+        use crate::Msg::*;
         match msg {
             Payload(payload) => self.change(Self::Properties { payload }),
             AsyncPayload => {

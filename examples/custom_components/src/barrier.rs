@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use button::Button;
+use crate::button::Button;
 
 pub struct Barrier {
     limit: u32,

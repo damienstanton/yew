@@ -1,6 +1,6 @@
 
-use router;
-use router::Route;
+use crate::router;
+use crate::router::Route;
 use yew::prelude::*;
 use std::usize;
 

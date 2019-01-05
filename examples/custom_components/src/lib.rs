@@ -6,8 +6,8 @@ mod button;
 mod barrier;
 
 use yew::prelude::*;
-use counter::{Counter, Color};
-use barrier::Barrier;
+use crate::counter::{Counter, Color};
+use crate::barrier::Barrier;
 
 pub struct Model {
     with_barrier: bool,
